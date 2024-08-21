@@ -1,0 +1,58 @@
+Switch from user exec mode to previlidge mode
+===============================================
+Router0   Router>enable
+
+Switch from previlidge mode to configuration mode
+==================================================
+Router0   Router#configure terminal 
+
+Change the hostname of a router
+==================================
+Router0   Router(config)#hostname R1
+
+Config Password in previlidge mode
+====================================
+Router0   R1(config)#enable password 123456
+Router0   R1(config)#exit
+Router0   R1(config)#do show run
+
+Config secret/encrypted password in previlidge mode
+=====================================================
+Router0   R1(config)#enable secret 1234567
+
+Config all password encryption
+=================================
+Router0   R1(config)#service password-encryption 
+
+Show all running configuration
+================================
+Router0   R1#show running-config
+
+Set the password minmum length
+=================================
+Router0   R1(config)#security passwords min-length 8
+
+Set a banner message in a router
+==================================
+Router0   R1(config)#banner motd $R1 router configuration$
+
+Set ip address to a router's port
+===================================
+Router0   R1>enable 
+Router0   R1#configure terminal 
+Router0   R1(config)#interface fastEthernet 0/0
+Router0   R1(config-if)#ip address 172.16.1.2 255.255.255.0
+Router0   R1(config-if)#no shutdown 
+Router0   R1(config-if)#description User LAN
+Router0   R1(config-if)#exit
+
+Router0   R1(config)#interface fastEthernet 0/1
+Router0   R1(config-if)#ip address 192.168.0.2 255.255.255.0
+Router0   R1(config-if)#no shutdown 
+Router0   R1(config-if)#description Admin LAN
+Router0   R1(config-if)#exit
+Router0   R1(config)#exit
+
+Backup router configuration
+=============================
+Router0   R1#copy running-config startup-config 
