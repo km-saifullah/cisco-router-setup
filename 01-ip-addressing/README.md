@@ -12,17 +12,17 @@ An **Internet Protocol (IP)** address is the unique identifying number assigned 
 Decimal Representation: **192.168.0.1**
 
 Binary Conversion
-128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |Decimal Value
---- | --- | --- |--- |--- |--- |--- |--- |---  
-2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> | Power
+| 2<sup>7</sup> | 2<sup>6</sup> | 2<sup>5</sup> | 2<sup>4</sup> | 2<sup>3</sup> | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> | Series |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Decimal Value |
 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 192 (128+64)
 1 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 168 (128+32+16)
 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0
 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1
 
-| 1st Octet | 2nd Octet | 3rd Octet | 4th Octet |
-| --------- | --------- | --------- | --------- |
-| 11000000  | 10101000  | 00000000  | 00000001  |
+| 1<sup>st</sup> Octet | 2<sup>nd</sup> Octet | 3<sup>rd</sup> Octet | 4<sup>th</sup> Octet |
+| -------------------- | -------------------- | -------------------- | -------------------- |
+| 11000000             | 10101000             | 00000000             | 00000001             |
 
 Total Bits: **32**
 
